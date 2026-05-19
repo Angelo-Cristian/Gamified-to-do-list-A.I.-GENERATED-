@@ -1,4 +1,4 @@
-# Android Project (A.I. GENERATED)
+# 📱 Android Project (A.I. GENERATED)
 This is a gamified to do list where you can set your tasks to start at a certain moment, they have a time limit that you can set when you create the respective task and if you complete tasks, you'll earn xp and level up on you're account.
 
 ❗This project was made with the goals of:
