@@ -1,0 +1,38 @@
+# --- Proiect Android & Kotlin ---
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/*/build
+*.apk
+*.aar
+*.bundle
+
+# --- Android Studio / IntelliJ ---
+.idea/
+/captures
+*.jks
+*.keystore
+google-services.json
+
+# --- Ktor & Rețea ---
+# Dacă folosești certificate locale pentru testare HTTPS cu Ktor
+*.p12
+*.pem
+
+# --- Cache-uri și fișiere temporare ---
+.externalNativeBuild
+.cxx
+/remote.pro
+*.swp
+*~
+
+# --- Log-uri ---
+*.log
