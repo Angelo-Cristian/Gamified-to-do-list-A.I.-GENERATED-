@@ -1,10 +1,5 @@
 # Android Project
 
-## Student Information
-Name: Indrei Angelo-Cristian
-Student ID: 1982
-Course: Android Development
-
 ## Project Title
 Contorizare de activități
 
