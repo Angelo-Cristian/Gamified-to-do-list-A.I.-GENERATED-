@@ -4,7 +4,7 @@ A gamified task management Android application where users can set tasks with sp
 
 This project was built as a case study to explore **Prompt-Driven Engineering**, client-server architecture, and cross-framework integration under modern development workflows.
 
-❗This read me is a version of my read me improved by the A.I. by making it look more professional. From what I've tested, if you give it an already made read me, it will work pretty well, but if you tell it to create one by giving it just some informations, it will make it too complex and it won't exeed your expectations.
+❗This read me is a version of my read me improved by the A.I. by making it look and sound more professional. From what I've tested, if you give it an already made read me, it will work pretty well, but if you tell it to create one by giving it just some informations, it will make it too complex and it won't exeed your expectations.
 
 ---
 
