@@ -1,83 +1,95 @@
-# 📱 Android Project (A.I. GENERATED)
-This is a gamified to do list where you can set your tasks to start at a certain moment, they have a time limit that you can set when you create the respective task and if you complete tasks, you'll earn xp and level up on you're account.
+# 📱 Gamified To-Do List (AI-Assisted & Prompt-Driven Architecture)
 
-❗This project was made with the goals of:
-1. Learning how to efficiently use A.I. when you create projects.
-2. Understanding how a client-server protocol is implemented.
-3. Learning how a program can connect to a realtime database on firebase.
-4. Geting used with creating the logic of a server made with the drogon framework.
+A gamified task management Android application where users can set tasks with specific start times and custom time limits. Completing tasks rewards the user with Experience Points (XP), allowing them to level up their account. 
 
-❗I also used A.I. on a part of this read me to analyse how useful it is.
+This project was built as a case study to explore **Prompt-Driven Engineering**, client-server architecture, and cross-framework integration under modern development workflows.
 
-❗The code was 99% generated since the primary goal of this project was to learn how to efficiently give prompts to A.I. .
+❗This read me is a version of my read me improved by the A.I. by making it look more professional. From what I've tested, if you give it an already made read me, it will work pretty well, but if you tell it to create one by giving it just some informations, it will make it too complex and it won't exeed your expectations.
 
-❗A.I. used: gemini(both the one on the web and the one integrated on android studio)
+---
 
-❗At the end of this read me are the conclusions of the analysation I made.
+## 🎯 Project Goals & Learning Objectives
+* **AI-Assisted Engineering:** Mastering efficient prompt engineering workflows to accelerate code generation, scaffolding, and documentation.
+* **Network Protocol Implementation:** Understanding and designing a custom client-server communication protocol.
+* **Realtime Cloud Integration:** Learning how to securely connect and sync data with the Firebase Realtime Database.
+* **Modern Backend Architecture:** Gaining hands-on experience setting up, structuring, and deploying a high-performance C++ server using the **Drogon** framework.
+
+---
 
 ## 📝 Features
-*Server c++ with drogon
-*Client in android studio with kotlin and jetpack compose
-*Realtime database in firebase
+* **C++ Backend:** High-performance server architecture built with the Drogon framework.
+* **Modern Android Client:** Native UI developed in Android Studio using Kotlin and Jetpack Compose.
+* **Real-time Synchronization:** Data persistence and instant updates powered by Firebase Realtime Database.
+* **Gamification Logic:** Time-restricted task tracking with dynamic XP allocation and leveling mechanics.
+
+---
 
 ## 📷 Screenshots 
-<img width="921" height="2048" alt="WhatsApp Image 2026-04-15 at 11 52 35" src="https://github.com/user-attachments/assets/512ee5a9-5a89-4edb-8cf6-9e0bd2ac11ce" />
-<img width="921" height="2048" alt="WhatsApp Image 2026-04-15 at 11 52 35 (1)" src="https://github.com/user-attachments/assets/1e123542-5a69-4d42-a8c2-48d3109bba0f" />
-<img width="921" height="2048" alt="WhatsApp Image 2026-04-15 at 11 52 35 (3)" src="https://github.com/user-attachments/assets/d46c6475-b9e9-4fcf-a139-3c3ac5e415bc" />
-<img width="921" height="2048" alt="WhatsApp Image 2026-04-15 at 11 52 35 (2)" src="https://github.com/user-attachments/assets/b48eeefc-16c1-4b2e-a956-4c320a0dbdb4" />
+<p align="center">
+  <img width="22%" alt="Screenshot 1" src="https://github.com/user-attachments/assets/512ee5a9-5a89-4edb-8cf6-9e0bd2ac11ce" />
+  <img width="22%" alt="Screenshot 2" src="https://github.com/user-attachments/assets/1e123542-5a69-4d42-a8c2-48d3109bba0f" />
+  <img width="22%" alt="Screenshot 3" src="https://github.com/user-attachments/assets/d46c6475-b9e9-4fcf-a139-3c3ac5e415bc" />
+  <img width="22%" alt="Screenshot 4" src="https://github.com/user-attachments/assets/b48eeefc-16c1-4b2e-a956-4c320a0dbdb4" />
+</p>
 
-## 🛠️ Tech Stack (A.I. GENERATED)
+---
+
+## 🛠️ Tech Stack
 ### 📱 Android App (Frontend)
-Kotlin: The primary programming language used to build the app.
-
-Jetpack Compose: Used to build the entire UI natively and declaratively.
-
-Coroutines & Flow: Used to handle background tasks (like API calls) without freezing the app screen.
-
-Ktor: Used to send HTTP requests and talk to the C++ server.
+* **Language:** Kotlin
+* **UI Framework:** Jetpack Compose (Declarative native UI)
+* **Asynchronous Programming:** Coroutines & Flow (for non-blocking UI updates and API data streams)
+* **Networking:** Ktor Client (HTTP requests handled asynchronously)
 
 ### ⚙️ Backend Server
-C++: The core language used for a fast and lightweight server.
+* **Language:** C++ (Optimized for speed and minimal memory footprint)
+* **Web Framework:** Drogon Framework (Asynchronous HTTP/REST application framework)
+* **Build System:** CMake
 
-Drogon Framework: A C++ web framework used to create the server and handle HTTP requests asynchronously.
+### ☁️ Database & Cloud Services
+* **Database:** Firebase Realtime Database (NoSQL cloud-hosted database for live synchronization)
 
-CMake: Used as the build system to compile the C++ code.
+---
 
-### ☁️ Database & Cloud
-Firebase Realtime Database: Used to store and sync data across users instantly in real-time.
+## 🏛️ Architecture
+The mobile client follows the **MVVM (Model-View-ViewModel)** architectural pattern to maintain a clean separation of concerns:
+* **View (Jetpack Compose):** Renders the user interface and captures user interactions.
+* **ViewModel:** Manages the UI state, processes screen logic, and exposes reactive data streams using Kotlin Flows.
+* **Model:** Handles data operations, networking with the C++ Drogon server, and direct synchronization with Firebase.
 
-## 🏛️ Architecture (A.I. GENERATED)
-This app uses the MVVM (Model-View-ViewModel) pattern to keep the code organized:
-
-View (Jetpack Compose): Handles the UI and what the user sees on their screen.
-
-ViewModel: Handles the screen logic and holds the data using Kotlin Flows so the UI updates automatically when data changes.
-
-Model: Handles fetching and sending data to the Firebase Database and the C++ Drogon server.
+---
 
 ## 🚀 How to Run
-### 🖥️ The client
-1. Clone the repository
-2. Open Android Studio
-3. Opne the file "the app"
-❗You have to manually change the ip from the code, since it's hardcoded, so the connection between the client and the server will work.
 
-###  🗄️ The server
-1. in vs2022 - open folder - server (from repository)
-❗It's possible that the connection with the realtime database from firebase won't be open, depending on when you'll open this project.
+### 🖥️ 1. The Mobile Client
+1. Clone the repository: `git clone https://github.com/Angelo-Cristian/[your-repo-name].git`
+2. Open the `/the app` folder inside Android Studio.
+3. > ⚠️ **Configuration Note:** Update the hardcoded IP address in the network configuration file to match your local server environment before building the project.
+4. Run the application on an emulator or a physical device.
 
-## Final conclusions (after analysing the using of A.I.)
-### ⛔ Problems
-1. When I tried to connect the server to the realtime database, it couldn't connect with the method that the A.I. used, because the firewall from my windows wasn't allowing the direct connection with the database, and the A.I. didn't try to analyse this type of situation, instead, it tried to recreate the code, with very small changes that didn't really metter.
-2. When I wanted to send certain data to the server, it didn't work, because the format that the data was send wasn't written correctly, but again, the A.I. tried to change the logic of the code, instead of thinkig that the format it tried to use was incorrect.
-3. On creating the certain part from the read me, it gived me too complex details and it tried to anticipate what my project had, instead of asking for more details, resulting in wrong informations (but I modified them).
+### 🗄️ 2. The Backend Server
+1. Launch **Visual Studio 2022**.
+2. Go to **Open -> Folder** and select the `/server` directory from the cloned repository.
+3. Build and run the CMake project.
+4. > ⚠️ **Database Note:** Depending on active Firebase security rules and local Windows Firewall configurations, you may need to white-list the server executable to allow the Firebase API connection.
 
-### ✅ Solutions
-1. Give all the necessary details about youself and about the project you make before you start giving it tasks.
-2. Always verify the informations that the ai gives you.
-3. If you don't know how to proparlly write a certain prompt, you can tell the A.I. to make it.
-4. If you use an integrated A.I., also use an external one when it comes to write code. Create the code with the external one and tell the internal one to adapt it for your code.
-5. If you think that a solution is too complex, tell it to simplify it or mention at the beginning of the conversation the level of complexity that you want.
+---
+
+## 📊 Case Study: Insights on AI-Assisted Development
+The core codebase of this project was generated via precise prompt engineering using **Gemini** (Web interface & Android Studio integration). The objective was to test the limits of LLMs in building a multi-language stack (Kotlin + C++). 
+
+Below are the engineering conclusions gathered from debugging and deploying this architecture:
+
+### ⛔ Technical Limitations Overcome
+1. **Network & Environment Blindspots:** When connecting the C++ server to Firebase, the AI repeatedly generated syntactically correct code that failed during execution. It failed to identify that the local Windows Firewall was blocking the connection, leading to a loop of redundant code rewrites. Human intervention was required to debug the network layer.
+2. **Data Serialization Faults:** The AI frequently generated incorrect payload formats for HTTP requests between Ktor (Kotlin) and Drogon (C++). Instead of detecting format mismatches, the LLM attempted to refactor the core business logic. The serialization bugs had to be diagnosed and fixed manually.
+3. **Documentation Hallucinations:** When generating boilerplate text, the AI tended to assume pre-existing project structures or overcomplicate features rather than prompting for context, requiring careful manual filtering.
+
+### ✅ Best Practices for AI Prompt Engineering
+1. **Context Initialization:** Always provide comprehensive project constraints, language versions, and stack architectures *before* requesting code.
+2. **Rigorous Verification:** Treating AI output as a draft; cross-referencing generated code against official framework documentation (especially for lower-level setups like Drogon).
+3. **Cross-Model Workflows:** Utilizing broad web-based LLMs to design high-level code architecture, while relying on IDE-integrated AI assistants to adapt the logic to existing files.
+4. **Complexity Capping:** Explicitly defining target complexity constraints within the prompt to avoid unnecessarily nested code structures or over-engineered solutions.
 
 ### 🗣️ Final Words
-The A.I. is very useful, but it's extremely important to know how to use it, so you won't create more damage than good.
+While Generative AI drastically accelerates scaffolding and boilerplate creation, senior-level oversight, debugging skills, and architectural knowledge remain absolutely critical to preventing logic errors and deploying a functional, unified system.
